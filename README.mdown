@@ -1,0 +1,54 @@
+#Reproducible research and computing
+
+Best practices for quantitative research including management and sharing of data and computational methods.
+This repo helps to understand the foundational skills that everyone using computers in the pursuit of scientific research should have.
+In recent years, the concern for reproducibility in computational science has gained traction. Research group has been pushing for several years the adoption of better standards for reproducible research.
+These standards include treating scientific software as a core intellectual product, adding automation to our data handling and analysis, and the open sharing of our digital objects.
+
+This repo  introduce to the tools and techniques that is consider fundamental for responsible use of computers in scientific research.
+
+# Data Acquisition
+- Choose an experimental design (if appropriate)
+- Consider population structure and confounding
+- Ensure you’ll have data available for validation in the future
+- Balance time and monetary budgets against the number of data points generated or conditions tested
+### Carry out power calculations
+1.  If limited to a particular data set(s) that don’t provide information needed to answer your research question, you may need to change your research question
+or hypothesis
+
+# Data Provenance
+## Data Source(s)
+- Record who carried out each experiment, at what date and time, how to contact them
+- Record the model and make information for any equipment used
+## Data Storage and Management
+- If you expect your project to include big data, by any definition - volume, velocity, or variety - plan up front for how you’ll manage it
+- If working with big data, consider a distributed file system and parallel processing, as well as streamed processing that can save progress, start,
+and stop as needed
+- If your data change frequently, include an explicit annotation process, automated if possible, that captures where new files are coming from, at
+what time, and who’s responsible for them 
+- If you’re working with many different kinds of data, consider using a data store such as the [Open Science Data Framework] (https://osf.io/) that provides detailed
+typing, metadata, and cross-file integration
+
+# Analysis Plan
+* Consider what could go wrong and how can you avoid it
+* Ensure you have the resources in place (necessary software, sufficient computing power) to carry out the whole project
+* Ensure re-running an entire analysis will not be difficult to carry out
+
+# Analysis Infrastructure
+* Choose a formal scientific workflow environment
+* Find and install software (text editor, development environment, task tracking,documentation, and communication tools) that will facilitate your day-to-day work
+* Set up a revision control repository for the project (GitHub, BitBucket, etc.)
+* Create a directory and folder structure
+* Store files in a consistent and intuitive manner
+* Include a README file that contains information about all other files in your repository
+## General guidelines
+- Command line utilities in Unix/Linux
+- An open-source scientific software ecosystem (personal favorite is Python's)
+- Software version control (The distributed kind:  git)
+- Good practices for scientific software development: code hygiene and testing
+- Knowledge of licensing options for sharing software
+
+Reproducible research: Authors provide all the necessary data and the computer codes to run the analysis again, re-creating the results.
+
+Replication: Arriving at the same scientific findings as another study, collecting new data (possibly with different methods) and completing new analyses. 
+A full replication study is sometimes impossible to do, but reproducible research is only limited by the time and effort we are willing to invest.
