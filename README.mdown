@@ -48,6 +48,28 @@ typing, metadata, and cross-file integration
 - Good practices for scientific software development: code hygiene and testing
 - Knowledge of licensing options for sharing software
 
+# Data Analysis
+* Provenance Tracking Infrastructure
+* Ensure you have infrastructure for at least the following three aspects of your
+research
+* Analysis commands you can run as part of your main workflow
+* Data that is produced by these, or other, commands
+* Lab notebook for everything else
+* Use a supplemental provenance annotation system and/or environment for formal data provenance
+1. JSON, XML, W3C PROV, Open Provenance Model
+2. Taverna, Open Science Data, MyGrid
+
+## Workflow Documentation
+- Practice literate programming and extensively document all code
+- Choose easily interpretable variable names
+- Make use of version control
+- GitHub, Google Docs, Etherpad, etc.
+- Make code and workflow as automated as possible
+- Use driver scripts
+- Use platforms like R Markdown, Jupyter notebook, etc.
+- Incorporate positive and negative controls throughout the analysis
+- Consider using a shared file service ( Dropbox, Google Drive, OneDrive, amozon webservices etc.)
+
 # Reproducible research: 
 
 Authors provide all the necessary data and the computer codes to run the analysis again, re-creating the results.
