@@ -1,4 +1,4 @@
-#Reproducible research and computing
+# Reproducible research and computing
 
 Best practices for quantitative research including management and sharing of data and computational methods.
 This repo helps to understand the foundational skills that everyone using computers in the pursuit of scientific research should have.
@@ -26,7 +26,7 @@ or hypothesis
 and stop as needed
 - If your data change frequently, include an explicit annotation process, automated if possible, that captures where new files are coming from, at
 what time, and who’s responsible for them 
-- If you’re working with many different kinds of data, consider using a data store such as the [Open Science Data Framework] (https://osf.io/) that provides detailed
+- If you’re working with many different kinds of data, consider using a data store such as the [Open Science Data Framework] (https://osf.io) that provides detailed
 typing, metadata, and cross-file integration
 
 # Analysis Plan
@@ -48,7 +48,11 @@ typing, metadata, and cross-file integration
 - Good practices for scientific software development: code hygiene and testing
 - Knowledge of licensing options for sharing software
 
-Reproducible research: Authors provide all the necessary data and the computer codes to run the analysis again, re-creating the results.
+# Reproducible research: 
 
-Replication: Arriving at the same scientific findings as another study, collecting new data (possibly with different methods) and completing new analyses. 
+Authors provide all the necessary data and the computer codes to run the analysis again, re-creating the results.
+
+# Replication: 
+
+Arriving at the same scientific findings as another study, collecting new data (possibly with different methods) and completing new analyses. 
 A full replication study is sometimes impossible to do, but reproducible research is only limited by the time and effort we are willing to invest.
