@@ -35,5 +35,26 @@ You can accomplish that with a few
 git add commands that specify the files you want to track, followed by a git commit:
 
 ``$ git add *.c``
+
 ``$ git add README``
-``$ git commit -m 'Add README file initial version control'``
+
+``$ git commit -m 'Add README file initial version control'``git
+
+**Recording Changes to the Repository**
+
+At this point, you should have a bona fide Git repository on your local machine, and a checkout or
+working copy of all of its files in front of you. 
+
+Remember that each file in your working directory can be in one of two states: tracked or
+untracked. Tracked files are files that were in the last snapshot; they can be unmodified, modified,
+or staged. 
+
+Untracked files are everything else — any files in your working directory that were not in your last
+snapshot and are not in your staging area. When you first clone a repository, all of your files will be
+tracked and unmodified because Git just checked them out and you haven’t edited anything.
+As you edit files, Git sees them as modified, because you’ve changed them since your last commit.
+As you work, you selectively stage these modified files and then commit all those staged changes,
+and the cycle repeats.
+
+.. image:: ./image/tracking_files.jpg
+   :width: 60pt
