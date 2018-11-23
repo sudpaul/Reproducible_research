@@ -38,7 +38,7 @@ git add commands that specify the files you want to track, followed by a git com
 
 ``$ git add README``
 
-``$ git commit -m 'Add README file initial version control'``git
+``$ git commit -m "Add README file initial version control"``
 
 **Recording Changes to the Repository**
 
