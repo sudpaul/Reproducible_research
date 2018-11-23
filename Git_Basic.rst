@@ -15,12 +15,25 @@ looks a little different depending on which system you’re running:
 
 :for Linux:
 ``$ cd /home/user/my_project``
+
 :for Mac:
-  ``$ cd /Users/user/my_project``
+``$ cd /Users/user/my_project``
+
 :for Windows:
-  ``$ cd /c/user/my_project``
+``$ cd /c/user/my_project``
+
 and type:
-     ``$ git init``
+``$ git init``
 
 This creates a new subdirectory named .git that contains all of your necessary repository files — a
 Git repository skeleton. At this point, nothing in your project is tracked yet.
+
+If you want to start version-controlling existing files (as opposed to an empty directory), you should
+probably begin tracking those files and do an initial commit. 
+
+You can accomplish that with a few
+git add commands that specify the files you want to track, followed by a git commit:
+
+``$ git add *.c``
+``$ git add README``
+``$ git commit -m 'Add README file initial version control'``
