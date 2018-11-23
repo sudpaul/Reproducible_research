@@ -58,3 +58,23 @@ and the cycle repeats.
 
 .. image:: ./image/tracking_files.jpg
    :width: 60pt
+   
+Let’s say you add a new file to your project, a simple README file. If the file didn’t exist before, and
+you run git status, you see your untracked file like so:
+
+``$ echo 'My Project' > README``
+
+``$ git status``
+
+``On branch master
+``Your branch is up-to-date with 'origin/master'.``
+``Untracked files:``
+(use "git add <file>..." to include in what will be committed)``
+
+``README``
+``nothing added to commit but untracked files present (use "git add" to track)``
+
+You can see that your new README file is untracked, because it’s under the “Untracked files” heading
+in your status output. Untracked basically means that Git sees a file you didn’t have in the previous
+snapshot (commit); Git won’t start including it in your commit snapshots until you explicitly tell it
+to do so.
