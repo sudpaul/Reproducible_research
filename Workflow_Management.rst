@@ -18,3 +18,7 @@ you execute it in one of the methods described above to check it’s working.
 Most Software developers are back and forth between their terminal and the editor, and can do fine grained testing of every 
 single line of code as they’re writing it.
 
+**Utility**
+- make
+- snakemake
+- cmake
