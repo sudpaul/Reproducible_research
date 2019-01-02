@@ -46,6 +46,11 @@ pain (though R makes it easy with .RData files, which are automatically produced
 
 With Make you can seperate your data analysis from the document which presents your analysis while retaining the automated integration between the two.
 
+The Syntax of make 
+=====
+-targetfile: sourcefile
+	``command``
+
 **How to use make for workflow management**
 
 The Make model is very easy to understand. There are things to be built (a target) and a list of commands that need to be executed to build said target. 
