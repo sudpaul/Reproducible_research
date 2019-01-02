@@ -66,6 +66,7 @@ some R scripts that run some analysis and produce a few plots. Note that the the
 
 ::
 ``bash``
+
 ``raw.csv: get_data.py``
     ``python get_data.py``
 
@@ -77,3 +78,8 @@ some R scripts that run some analysis and produce a few plots. Note that the the
 
 ``plot.Rout: plot.R model.Rout``
     ``R CMD BATCH plot.R``
+
+Each build target is specified as reliant on the file that needs to be run to build it in addition to the files necessary to build its dependencies. It is only necessary to 
+specify a first order dependence in this case. Say you've built the entire project, but then you go and change something in get_data.py. The next time you build the project 
+this will trigger a rebuild of the Python data retrieving script, which will trigger a re-run of the cleaning shell script, and so on, resulting in a full rebuild. If, however,
+you'd made a change in clean.sh then you would have triggered a re-run of the model and plotting scripts, but not the cleaning shell script.
