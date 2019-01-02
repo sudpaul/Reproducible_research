@@ -53,12 +53,27 @@ Make determines whether a command needs to be executed by checking if the time-m
 of any of the build dependencies. If that is the case, then the target is out of date and needs to be rebuilt. If not, then the build target does not need to be rebuilt, 
 and the commands that need to be run to build the target are not executed. Suppose you've written a Python script that fetches some data, and writes a file, raw.csv to disk. 
 You would write:
+
 ::
 ``bash``
  ``raw.csv: get_data.py``
   ``python get_data.py``
-::
+
 If raw.csv doesn't exist, or was modified at a later time than get_data.py (meaning that get_data.py has been modified since raw.csv was last produced) the command python 
 get_data.py is run, which (re)generates raw.csv. More realistically you have a number of scripts working together. You might have a shell script that cleans the data, and 
 some R scripts that run some analysis and produce a few plots. Note that the the commands listed below the build target must be indented using the tab character 
 (though you can modify this).
+
+::
+``bash``
+``raw.csv: get_data.py``
+    ``python get_data.py``
+
+``clean.csv: clean.sh raw.csv``
+    ``source clean.sh``
+
+``model.Rout: model.R clean.csv``
+    ``R CMD BATCH model.R``
+
+``plot.Rout: plot.R model.Rout``
+    ``R CMD BATCH plot.R``
