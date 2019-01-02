@@ -51,6 +51,12 @@ The Syntax of make
 -targetfile: sourcefile
 	``command``
 
+Here targetfile is the file you want to generate, sourcefile is the file it depends on (is derived from), and command is something you run on the terminal to 
+generate the target file. These terms generalize: a source file can itself be a generated file, in turn dependent on other source files; there can be multiple 
+source files, or zero source files; and a command can be a sequence of commands or a complex script that you invoke. In Make terms source files are referred to 
+as prerequisites, while target files are simply targets.
+
+
 **How to use make for workflow management**
 
 The Make model is very easy to understand. There are things to be built (a target) and a list of commands that need to be executed to build said target. 
