@@ -103,5 +103,6 @@ you'd made a change in clean.sh then you would have triggered a re-run of the mo
 .. _Linux/Mac: http://ftp.gnu.org/gnu/make/
 
 **Book ref**
+
 - O'Reilly_
-.. _O'Reilly : https://www.oreilly.com/openbook/make3/book/index.csp
+.. _O'Reilly: https://www.oreilly.com/openbook/make3/book/index.csp
