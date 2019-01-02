@@ -54,6 +54,6 @@ of any of the build dependencies. If that is the case, then the target is out of
 and the commands that need to be run to build the target are not executed. Suppose you've written a Python script that fetches some data, and writes a file, raw.csv to disk. 
 You would write:
 
-``:::bash
-raw.csv: get_data.py
-    python get_data.py``
+``:::bash``
+`raw.csv: get_data.py`
+    ``python get_data.py``
