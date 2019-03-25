@@ -6,21 +6,29 @@ The steps below will walk you through beginning this process of writing pseudoco
 
 Write Pseudocode
 =================
+
 # Steps required to process data analysis
+
 ::
+
 1. Get a list of files in the directory
 2. Subset the list to just the files required to data analysis
 3. Devided the taks into smaller sub-task
 4. Calculate and Summarize the data analysis
 5. Save the clean and intermediate data for future use
+
 ::
+
 # Produce your result/plot!
 
 
 Data Workflow Best Practices
 ============================
+
 There are many things to keep in mind when creating a workflow. A few include:
+
 ::
+
 1. Do not modify the raw data
 Typically you do not want to modify the raw data, so that you can always reproduce your output from the same inputs. 
 In some cases, this is less important, e.g., when you are not tasked with curating the raw data.
@@ -47,4 +55,5 @@ all-sites-date.csv
 
 As you are working on your pseudo code, consider the parts of your analysis that are well suited for functions. 
 Keep functions small and focused. A function should do one thing well. You can then combine many functions into a wrapper function to automate and make for a nicely crafted program.
+
 ::
