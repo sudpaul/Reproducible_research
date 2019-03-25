@@ -17,8 +17,6 @@ Write Pseudocode
 4. Calculate and Summarize the data analysis
 5. Save the clean and intermediate data for future use
 
-::
-
 # Produce your result/plot!
 
 
@@ -46,8 +44,10 @@ Here are some naming options:
 
 # Less than ideal name
 data.csv
+
 # OK Name
 analysis.csv`
+
 # Expressive name
 all-sites-date.csv
 
@@ -56,4 +56,4 @@ all-sites-date.csv
 As you are working on your pseudo code, consider the parts of your analysis that are well suited for functions. 
 Keep functions small and focused. A function should do one thing well. You can then combine many functions into a wrapper function to automate and make for a nicely crafted program.
 
-::
+
