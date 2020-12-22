@@ -76,3 +76,10 @@ git merge <branch_name>
 ```
 
 [Learn git branching](http://pcottle.github.io/learnGitBranching/)
+
+And thats how you create a new branch, make some changes and merge them with the main branch.
+Now lets push to github repo,
+```Bash
+git push -u origin main
+```
+Now you can go to your github repo and see what changes have happened.
