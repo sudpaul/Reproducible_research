@@ -100,7 +100,7 @@ you'd made a change in clean.sh then you would have triggered a re-run of the mo
 - windows_
 .. _windows: http://gnuwin32.sourceforge.net/packages/make.htm
 - Linux/Mac_
-.. _Linux/Mac: http://ftp.gnu.org/gnu/make/
+.. _Linux/Mac: http://ftp.gnu.org/gnu/make/make-4.3.tar.gz
 
 **Book ref**
 
